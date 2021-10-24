@@ -156,7 +156,7 @@
 	
 	/* Parallax Backgrounds */
 	.bg-parallax{ position: absolute; left:0; top:0; width: 100%; height: 100%; z-index: -1; background-size: cover; background-position: center center; background-repeat: no-repeat; }
-	.bg-parallax.img-scale:not(.bg-parallax-mobiled){ top:-10%; height: 120%; }
+	.bg-parallax.img-scale:not(..bg-parallax-mobiled){ top:-10%; height: 120%; }
 	section.has-parallax{ position: relative; z-index: 0; overflow: hidden; }
 
 	/* Animated SVG Icons */
