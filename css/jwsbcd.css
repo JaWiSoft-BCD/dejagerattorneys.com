@@ -101,7 +101,7 @@
 /* Fading animation */
 .fade-jwsbcd {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 
 @keyframes fade-jwsbcd {
