@@ -113,3 +113,36 @@
         opacity: 1
     }
 }
+
+.popup {
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    max-width: 600px;
+    /* Limiting the maximum width */
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.popup .btn {
+    background-color: #000000;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.popup a {
+    text-decoration: underline;
+    font-weight: bold;
+    /* Added to make the <a> tag bold */
+    color: rgba(158, 103, 2, 0.397);
+    /* Added to give the <a> tag a gold tint */
+}
