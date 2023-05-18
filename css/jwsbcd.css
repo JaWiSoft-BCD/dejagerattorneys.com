@@ -116,27 +116,36 @@
 
 .popup {
     position: fixed;
-    text-align: center;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
-    max-width: 600px;
-    /* Limiting the maximum width */
+    width: 100%;
+    /* Adjust the width as needed */
     height: auto;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    /* Center align the text within the popup */
+}
+
+.popup p {
+    font-size: 12px;
+    margin: 0;
+    /* Remove margin to bring text closer to the button */
+    display: inline-block;
+    /* Display the text inline */
 }
 
 .popup .btn {
     background-color: #000000;
     color: white;
-    padding: 6px 12px;
+    padding: 5px 11px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    /* Display the button inline */
 }
 
 .popup a {
