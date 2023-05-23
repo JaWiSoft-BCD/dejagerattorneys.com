@@ -2061,12 +2061,11 @@
     <script src="js/cookie.js"></script>
 
     <script>
-
         jQuery(function () {
             var selector = $("#video-background");
             myPlayer = jQuery(selector).YTPlayer({
                 showControls: false,
-                vol: 100,
+                vol: 0,
                 onReady: function (player) {
                     $(".play-sound").on("click touch", function () {
                         $("#video-background").YTPToggleVolume()
@@ -2079,48 +2078,6 @@
             });
 
         });
-
-    </script>
-
-    <script>
-        $(".play-sound").on("click touch", function () {
-            var audioElement = document.getElementById("particlesSound");
-            //You can set the volume
-            $(audioElement).prop("volume", 0);
-            if (audioElement.paused) {
-                audioElement.play();
-                $(this).removeClass("paused").addClass("playing");
-            }
-            else {
-                audioElement.pause();
-                $(this).addClass("paused").removeClass("playing");
-            }
-        });
-    </script>
-    <script>
-
-        //*********************************************
-        //  PROJECT VIDEO BACKGROUND
-        //*********************************************
-
-        jQuery(function () {
-            var selector = $("#video-background");
-            myPlayer = jQuery(selector).YTPlayer({
-                showControls: false,
-                vol: 100,
-                onReady: function (player) {
-                    $(".play-sound").on("click touch", function () {
-                        $("#video-background").YTPToggleVolume()
-                        $(this).toggleClass("playing paused");
-                    });
-                },
-                playerVars: {
-                    loop: 1
-                }
-            });
-
-        });
-
     </script>
 
 
