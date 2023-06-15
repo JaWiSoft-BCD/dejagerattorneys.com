@@ -155,3 +155,21 @@
     color: rgba(158, 103, 2, 0.397);
     /* Added to give the <a> tag a gold tint */
 }
+
+.social-sharing-widget-de-jager {
+    display: inline-block;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.social-sharing-widget-de-jager img {
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.social-sharing-widget-de-jager a {
+    display: inline-block;
+    margin-right: 10px;
+}

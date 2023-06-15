@@ -26,3 +26,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active-jwsbcd";
 }
+
+var de_jager_url = "https://www.dejagerattorneys.com";
+var de_jager_title = "De Jager Attorneys";
+
+var socialLinks = document.querySelectorAll(".social-sharing-widget-de-jager a");
+socialLinks.forEach(function (link) {
+    var href = link.getAttribute("href");
+    href = href.replace("[URL]", encodeURIComponent(de_jager_url));
+    href = href.replace("[TITLE]", encodeURIComponent(de_jager_title));
+    link.setAttribute("href", href);
+});
