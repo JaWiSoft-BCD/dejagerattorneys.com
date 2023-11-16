@@ -1,8 +1,3 @@
-const cookieConsentBanner = document.querySelector('#cookie-consent-banner');
-const acceptButton = document.querySelector('#cookie-consent-banner__accept-button');
-const rejectButton = document.querySelector('#cookie-consent-banner__reject-button');
-
-document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
 function getCookie(name) {
     // Split cookie string and get all individual name=value pairs in an array
     var cookieArr = document.cookie.split(";");
@@ -36,13 +31,3 @@ const checkCookie = () => {
 };
 
 checkCookie();
-
-acceptButton.addEventListener('click', () => {
-    document.cookie = 'cookieConsent=accept; max-age=2592000; path=/';
-    window.location.reload();
-});
-
-rejectButton.addEventListener('click', () => {
-    cookieConsentBanner.style.display = 'none';
-});
-

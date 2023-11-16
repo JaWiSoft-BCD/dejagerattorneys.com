@@ -1,3 +1,32 @@
+const cookieConsentBanner = document.querySelector('#cookie-consent-banner');
+const acceptButton = document.querySelector('#cookie-consent-banner__accept-button');
+const rejectButton = document.querySelector('#cookie-consent-banner__reject-button');
+
+acceptButton.addEventListener('click', () => {
+    document.cookie = 'cookieConsent=accept; max-age=2592000; path=/';
+    window.location.reload();
+});
+
+rejectButton.addEventListener('click', () => {
+    document.cookie = 'cookieConsent=reject; max-age=3600; path=/';
+    cookieConsentBanner.style.display = 'none';
+});
+
+const bannerDispaly = () => {
+    var concet_obtained = getCookie("cookieConsent");
+    if (concet_obtained == 'accept') {
+        cookieConsentBanner.style.display = 'none';
+        return;
+    }
+    if (concet_obtained == 'reject') {
+        cookieConsentBanner.style.display = 'none';
+        return;
+    }
+    cookieConsentBanner.style.display = 'block';
+}
+
+bannerDispaly()
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
