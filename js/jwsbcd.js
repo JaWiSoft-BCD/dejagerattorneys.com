@@ -25,7 +25,7 @@ const bannerDispaly = () => {
     cookieConsentBanner.style.display = 'block';
 }
 
-bannerDispaly()
+bannerDispaly();
 
 let slideIndex = 1;
 showSlides(slideIndex);
