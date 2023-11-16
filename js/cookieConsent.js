@@ -18,7 +18,6 @@ function getCookie(name) {
 }
 
 const checkCookie = () => {
-    cookieConsentBanner.style.display = 'none';
     var concet_obtained = getCookie("cookieConsent");
     if (concet_obtained == 'accept') {
         var ga = document.createElement('script');
@@ -27,7 +26,6 @@ const checkCookie = () => {
         document.head.appendChild(ga);
         return;
     }
-    cookieConsentBanner.style.display = 'block';
 };
 
 checkCookie();
