@@ -114,46 +114,39 @@
     }
 }
 
-.popup {
+.cookie-consent-banner {
     position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
     width: 100%;
-    /* Adjust the width as needed */
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
     text-align: center;
-    /* Center align the text within the popup */
+    z-index: 100;
 }
 
-.popup p {
-    font-size: 12px;
-    margin: 0;
-    /* Remove margin to bring text closer to the button */
-    display: inline-block;
-    /* Display the text inline */
+.cookie-consent-banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.popup .btn {
-    background-color: #000000;
-    color: white;
-    padding: 5px 11px;
+.cookie-consent-banner__accept-button,
+.cookie-consent-banner__reject-button {
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
-    font-size: 12px;
-    display: inline-block;
-    /* Display the button inline */
 }
 
-.popup a {
-    text-decoration: underline;
-    font-weight: bold;
-    /* Added to make the <a> tag bold */
-    color: rgba(158, 103, 2, 0.397);
-    /* Added to give the <a> tag a gold tint */
+.cookie-consent-banner__accept-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cookie-consent-banner__reject-button {
+    background-color: #313131;
+    color: #fff;
 }
 
 .social-sharing-widget-de-jager {

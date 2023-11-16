@@ -1839,16 +1839,18 @@
         <!-- End Footer Bottom -->
 
     </footer>
-    <!-- Add to activate cookie
-    <div class="popup" id="cookiePopup">
-        <p>
-            We collect data, including activity tracking, through the use of cookies. By browsing our site,
-            you consent to the collection of such information. Read our <a href="cookie-policy.html">cookie</a> and <a
-                href="privacy-policy.html">privacy</a> policy
-            for more information.</p>
-        <button class="btn" onclick="acceptCookies()">Continue</button>
+
+    <div class="cookie-consent-banner" id="cookie-consent-banner">
+        <div class="cookie-consent-banner__content">
+            <p>We use cookies to improve your experience. By continuing to browse our site, you agree to our use of cookies.
+            </p>
+            <div><button class="cookie-consent-banner__accept-button"
+                    id="cookie-consent-banner__accept-button">Accept</button>
+                <button class="cookie-consent-banner__reject-button"
+                    id="cookie-consent-banner__reject-button">Reject</button>
+            </div>
+        </div>
     </div>
-    -->
 
     <!-- Modal For Team Member -->
     <div class="modal fade fade-scale" id="jonathan" tabindex="-1" role="dialog" aria-hidden="true">
@@ -2259,9 +2261,7 @@
     <script src="js/components/particles.min.js"></script>
     <script src="js/plugins.js?v=1.01"></script>
     <script src="js/jwsbcd.js"></script>
-    <!--  add to activate cookie
     <script src="js/cookie.js"></script>
-    -->
     <script>
         jQuery(function () {
             var selector = $("#video-background");
