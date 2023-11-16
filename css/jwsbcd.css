@@ -152,6 +152,7 @@
 
 .cookie-consent-banner__accept-button,
 .cookie-consent-banner__reject-button {
+    margin: 10px;
     padding: 10px 20px;
     cursor: pointer;
 }
