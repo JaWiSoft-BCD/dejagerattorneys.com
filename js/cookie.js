@@ -27,7 +27,7 @@ const checkCookie = () => {
     var concet_obtained = getCookie("cookieConsent");
     if (concet_obtained == 'accept') {
         var ga = document.createElement('script');
-        ga.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA_MEASUREMENT_ID';
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z7MQP0SRWK";
         ga.async = true;
         document.head.appendChild(ga);
         return;
