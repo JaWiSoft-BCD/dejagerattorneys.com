@@ -1843,10 +1843,7 @@
 
     <div class="cookie-consent-banner" id="cookie-consent-banner">
         <div class="cookie-consent-banner__content">
-            <p>We use cookies to improve your experience, and analyse our traffic. By selecting "Accept", you consent to
-                our use of cookies.<br>For more information about how we use cookies, please see our <a
-                    href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.
-            </p>
+            <p id="cookie_banner_text"></p>
             <div>
                 <button class="cookie-consent-banner__reject-button"
                     id="cookie-consent-banner__reject-button">Reject</button>
@@ -1857,9 +1854,10 @@
         </div>
         <div style="position:absolute;bottom: 0;left: 0;">
             <p style="padding-left:20px; padding-bottom:10px;padding-top:-10px ; text-align:left;font-size: 12px;">Last
-                updated: 2023-11-23</p>
+                updated: <span id="policy_updated_date"></span></p>
         </div>
     </div>
+    <script src="js/jwsbcd.js"></script>
 
     <!-- Modal For Team Member -->
     <div class="modal fade fade-scale" id="jonathan" tabindex="-1" role="dialog" aria-hidden="true">
@@ -2275,7 +2273,7 @@
     <script src="js/components/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/components/particles.min.js"></script>
     <script src="js/plugins.js?v=1.01"></script>
-    <script src="js/jwsbcd.js"></script>
+    
     <script>
         jQuery(function () {
             var selector = $("#video-background");

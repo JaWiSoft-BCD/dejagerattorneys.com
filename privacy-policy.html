@@ -28,11 +28,13 @@
     <link rel="stylesheet" href="css/jwsbcd.css">
     <script src="js/cookieConsent.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        if (cookieConsent) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-Z7MQP0SRWK');
+            gtag('config', 'G-Z7MQP0SRWK');
+        }
     </script>
 </head>
 
@@ -502,10 +504,7 @@
     </footer>
     <div class="cookie-consent-banner" id="cookie-consent-banner">
         <div class="cookie-consent-banner__content">
-            <p>We use cookies to improve your experience, and analyse our traffic. By selecting "Accept", you consent to
-                our use of cookies.<br>For more information about how we use cookies, please see our <a
-                    href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.
-            </p>
+            <p id="cookie_banner_text"></p>
             <div>
                 <button class="cookie-consent-banner__reject-button"
                     id="cookie-consent-banner__reject-button">Reject</button>
@@ -516,11 +515,9 @@
         </div>
         <div style="position:absolute;bottom: 0;left: 0;">
             <p style="padding-left:20px; padding-bottom:10px;padding-top:-10px ; text-align:left;font-size: 12px;">Last
-                updated: 2023-11-23</p>
+                updated: <span id="policy_updated_date"></span></p>
         </div>
     </div>
-    </div>
-    <!-- End Footer -->
     <script src="js/jwsbcd.js"></script>
     <!-- jQuery and other plugins -->
     <script src="js/jquery.min.js"></script>

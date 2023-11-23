@@ -26,19 +26,19 @@
     <link id="changeable_color" rel="stylesheet" href="css/colors/orange.css" />
     <!-- Page's Tone -->
     <link id="changeable_tone" rel="stylesheet" href="css/tones/dark.css" />
+    <script src="js/cookieConsent.js"></script>
+    <script>
+        if (cookieConsent) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-Z7MQP0SRWK');
+        }
+    </script>
 </head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=251472827"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', '251472827');
-</script>
-
-<!-- BODY START -->
 
 <body>
 
@@ -417,7 +417,23 @@
     </footer>
     <!-- End Footer -->
 
-
+    <div class="cookie-consent-banner" id="cookie-consent-banner">
+        <div class="cookie-consent-banner__content">
+            <p id="cookie_banner_text"></p>
+            <div>
+                <button class="cookie-consent-banner__reject-button"
+                    id="cookie-consent-banner__reject-button">Reject</button>
+                <button class="cookie-consent-banner__accept-button"
+                    id="cookie-consent-banner__accept-button">Accept</button>
+                <div></div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom: 0;left: 0;">
+            <p style="padding-left:20px; padding-bottom:10px;padding-top:-10px ; text-align:left;font-size: 12px;">Last
+                updated: <span id="policy_updated_date"></span></p>
+        </div>
+    </div>
+    <script src="js/jwsbcd.js"></script>
 
 
 
