@@ -7,7 +7,7 @@ if (typeof cookieConsentName === 'undefined') {
 }
 
 acceptButton.addEventListener('click', () => {
-    document.cookie = 'cookieConsent=accept; max-age=2592000; path=/';
+    document.cookie = cookieConsentName + '=accept; max-age=2592000; path=/';
     window.location.reload();
 });
 
