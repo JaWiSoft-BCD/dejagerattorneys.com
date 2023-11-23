@@ -1,6 +1,7 @@
 const cookieConsentBanner = document.querySelector('#cookie-consent-banner');
 const acceptButton = document.querySelector('#cookie-consent-banner__accept-button');
 const rejectButton = document.querySelector('#cookie-consent-banner__reject-button');
+
 if (typeof cookieConsentName === 'undefined') {
     // comes from cookieConsent.js
     console.log("Cookie banner may not work due to cookieConsent.js not being imported or not being imported first.")
@@ -17,7 +18,7 @@ rejectButton.addEventListener('click', () => {
 });
 
 const bannerDispaly = () => {
-    var concet_obtained = cookieConsent; //obtained from cookieConsent.js
+    var concet_obtained = getCookie(cookieConsentName); //obtained from cookieConsent.js
     if (concet_obtained == 'accept') {
         cookieConsentBanner.style.display = 'none';
         return;
