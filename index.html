@@ -33,11 +33,13 @@
     <link id="changeable_tone" rel="stylesheet" href="css/custom.css" />
     <script src="js/cookieConsent.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        if (cookieConsent) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-Z7MQP0SRWK');
+            gtag('config', 'G-Z7MQP0SRWK');
+        }
     </script>
 </head>
 

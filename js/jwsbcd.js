@@ -17,7 +17,7 @@ rejectButton.addEventListener('click', () => {
 });
 
 const bannerDispaly = () => {
-    var concet_obtained = getCookie(cookieConsentName);
+    var concet_obtained = cookieConsent; //obtained from cookieConsent.js
     if (concet_obtained == 'accept') {
         cookieConsentBanner.style.display = 'none';
         return;
