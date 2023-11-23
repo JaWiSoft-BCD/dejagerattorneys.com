@@ -1,3 +1,7 @@
+const cookieConsentDisplayName = "cookieConsent_"
+const cookieConsentNumber = "1";
+const cookieConsentName = cookieConsentDisplayName + cookieConsentNumber;
+
 function getCookie(name) {
     // Split cookie string and get all individual name=value pairs in an array
     var cookieArr = document.cookie.split(";");
@@ -18,7 +22,7 @@ function getCookie(name) {
 }
 
 const checkCookie = () => {
-    var concet_obtained = getCookie("cookieConsent");
+    var concet_obtained = getCookie(cookieConsentName);
     if (concet_obtained == 'accept') {
         var ga = document.createElement('script');
         ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z7MQP0SRWK";
