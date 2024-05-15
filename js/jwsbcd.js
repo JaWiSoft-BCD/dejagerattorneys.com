@@ -1,7 +1,7 @@
 const cookieConsentBanner = document.querySelector("#cookie-consent-banner");
 const cookieBannerText =
   'We use cookies to improve your experience, and analyse our traffic. By selecting "Accept", you consent to our use of cookies.<br>For more information about how we use cookies, please see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.';
-const cookiePoliciesLastUpdated = "2023-11-23";
+const cookiePoliciesLastUpdated = "2024-05-15";
 document.getElementById("cookie_banner_text").innerHTML = cookieBannerText;
 document.getElementById("policy_updated_date").innerHTML =
   cookiePoliciesLastUpdated;
