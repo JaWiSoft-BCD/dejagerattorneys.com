@@ -78,7 +78,7 @@ function showSlides(n) {
 }
 
 var de_jager_url = "https://www.dejagerattorneys.com";
-var de_jager_title = "De Jager Attorneys";
+var de_jager_title = "De Jager & Associates Inc";
 
 var socialLinks = document.querySelectorAll(
   ".social-sharing-widget-de-jager a"
