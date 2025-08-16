@@ -555,7 +555,7 @@
 	section.about .section-inner{ padding-bottom: 10px;  }
 	/* You can see section title, subtitle .etc styles on the THEME SKELETON > Typograhy on top this file */
 	/* Boxes on about section */
-	.about-boxes{ margin-top: 70px; }
+	.about-boxes{ margin-top: 70px; flex: 0 0 23%;}
 	.about-boxes .about-box{ background-color: transparent; padding: 45px 15px; cursor: default; -webkit-transition: background 0.3s; -moz-transition: background 0.3s; transition: background 0.3s; }
 	.about-boxes .about-box:hover{ background-color: #f3f3f3; }
 	/* Icon on box */
