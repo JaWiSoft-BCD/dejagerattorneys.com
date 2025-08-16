@@ -191,6 +191,9 @@
     background-color: #fff;
     border-radius: 12px;
     min-width: 250px;
+    max-width: 250px;
+    min-height: 400px;
+    transform: translateY(0);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
