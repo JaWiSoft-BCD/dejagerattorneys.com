@@ -188,40 +188,69 @@
 }
 
 
+
+/* Container for all boxes */
+.jwsbcd-about-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 70px;
+    padding-bottom: 10px;
+}
+
+/* Individual box */
 .jwsbcd-about-box {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    padding: 45px 15px;
+    cursor: default;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e0e0e0;
-    margin-bottom: 30px;
+    text-align: center;
+    flex: 1 1 calc(25% - 30px); /* Responsive 4-column layout with gap */
+    max-width: calc(25% - 30px);
 }
 
 .jwsbcd-about-box:hover {
+    background-color: #f3f3f3;
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Icon styling */
 .jwsbcd-about-box-icon {
+    font-size: 70px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
+/* Title styling */
 .jwsbcd-box-title {
     font-family: 'Georgia', serif;
-    font-size: 1.5rem;
-    color: #2c3e50;
+    font-size: 18px;
+    color: #515151;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 30px;
     margin-bottom: 15px;
-    font-weight: bold;
+    transition: color 0.2s;
 }
 
+/* List styling */
 .jwsbcd-box-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 1rem;
-    color: #555;
+    font-size: 15px;
+    color: #9d9d9d;
+    line-height: 24px;
+    transition: color 0.2s;
 }
 
 .jwsbcd-box-list li {
@@ -234,4 +263,19 @@
     position: absolute;
     left: 0;
     color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .jwsbcd-about-box {
+        flex: 1 1 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    .jwsbcd-about-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
