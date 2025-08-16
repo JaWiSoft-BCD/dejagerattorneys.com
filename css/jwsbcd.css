@@ -186,3 +186,53 @@
     display: inline-block;
     margin-right: 10px;
 }
+
+
+.jwsbcd-about-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.jwsbcd-about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.jwsbcd-about-box-icon {
+    margin-bottom: 20px;
+}
+
+.jwsbcd-box-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.jwsbcd-box-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.jwsbcd-box-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.jwsbcd-box-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2c3e50;
+}
