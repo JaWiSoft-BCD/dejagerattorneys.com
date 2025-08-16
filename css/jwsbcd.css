@@ -187,14 +187,6 @@
     margin-right: 10px;
 }
 
-.jwsbcd-about-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 70px;
-    padding: 0 15px 40px;
-}
-
 .jwsbcd-about-box {
     background-color: #fff;
     border-radius: 12px;
@@ -202,8 +194,9 @@
     padding: 30px 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    align-content: center;
     border: 1px solid #e0e0e0;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .jwsbcd-about-box:hover {
