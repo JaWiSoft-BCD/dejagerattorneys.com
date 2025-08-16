@@ -231,7 +231,6 @@
 }
 
 .jwsbcd-box-list li::before {
-    content: "•";
     position: absolute;
     left: 0;
     color: #2c3e50;
