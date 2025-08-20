@@ -1,7 +1,7 @@
 const cookieConsentBanner = document.querySelector("#cookie-consent-banner");
 const cookieBannerText =
   'We use cookies to improve your experience, and analyse our traffic. By selecting "Accept", you consent to our use of cookies.<br>For more information about how we use cookies, please see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.';
-const cookiePoliciesLastUpdated = "2024-05-15";
+const cookiePoliciesLastUpdated = "2025-08-20";
 document.getElementById("cookie_banner_text").innerHTML = cookieBannerText;
 document.getElementById("policy_updated_date").innerHTML =
   cookiePoliciesLastUpdated;
@@ -77,7 +77,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active-jwsbcd";
 }
 
-var de_jager_url = "https://www.dejagerattorneys.com";
+var de_jager_url = "https://www.djatt.co,za";
 var de_jager_title = "De Jager & Associates Inc";
 
 var socialLinks = document.querySelectorAll(

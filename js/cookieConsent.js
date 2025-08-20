@@ -1,5 +1,5 @@
 const cookieConsentDisplayName = "cookieConsent_"
-const cookieConsentNumber = "1";
+const cookieConsentNumber = "2";
 const cookieConsentName = cookieConsentDisplayName + cookieConsentNumber;
 var cookieConsent = false;
 

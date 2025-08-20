@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /_pages/
 Disallow: /files/
 
-Sitemap: https://dejagerattorneys.com/sitemap.xml
+Sitemap: https://www.djatt.co.za.com/sitemap.xml
