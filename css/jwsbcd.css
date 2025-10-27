@@ -235,7 +235,6 @@
 .jwsbcd-box-list li {
     margin-bottom: 8px;
     position: relative;
-    padding-left: 15px;
 }
 
 .jwsbcd-box-list li::before {
