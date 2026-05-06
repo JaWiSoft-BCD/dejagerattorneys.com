@@ -19,15 +19,29 @@ if (typeof cookieConsentName === "undefined") {
   );
 }
 
-acceptButton.addEventListener("click", () => {
-  document.cookie = cookieConsentName + "=accept; max-age=2592000; path=/";
-  window.location.reload();
-});
+if (acceptButton) {
+  acceptButton.addEventListener("click", () => {
+    const cname = typeof cookieConsentName !== "undefined" ? cookieConsentName : "cookieConsent";
+    const maxAge = 60 * 60 * 24 * 30; // 30 days
+    let cookieStr = cname + "=accept; max-age=" + maxAge + "; path=/; SameSite=Lax";
+    if (location.protocol === "https:") cookieStr += "; Secure";
+    document.cookie = cookieStr;
+    if (cookieConsentBanner) cookieConsentBanner.style.display = "none";
+    if (typeof checkCookie !== "undefined") checkCookie();
+  });
+} else {
+  console.warn("Accept button not found: #cookie-consent-banner__accept-button");
+}
 
-rejectButton.addEventListener("click", () => {
-  document.cookie = "cookieConsent=reject; max-age=3600; path=/";
-  cookieConsentBanner.style.display = "none";
-});
+if (rejectButton) {
+  rejectButton.addEventListener("click", () => {
+    const cname = typeof cookieConsentName !== "undefined" ? cookieConsentName : "cookieConsent";
+    document.cookie = cname + "=reject; max-age=3600; path=/; SameSite=Lax";
+    if (cookieConsentBanner) cookieConsentBanner.style.display = "none";
+  });
+} else {
+  console.warn("Reject button not found: #cookie-consent-banner__reject-button");
+}
 
 const bannerDispaly = () => {
   var concet_obtained = getCookie(cookieConsentName); //obtained from cookieConsent.js
